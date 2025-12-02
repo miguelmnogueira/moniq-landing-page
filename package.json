@@ -1,18 +1,22 @@
 {
-  "name": "landing-page",
-  "module": "index.ts",
-  "type": "module",
-  "version": "1.0.0",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "lucide": "^0.555.0",
-    "tailwindcss": "^4.1.17"
-  }
+	"name": "landing-page",
+	"module": "index.ts",
+	"type": "module",
+	"version": "1.0.0",
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.17",
+		"gh-pages": "^6.3.0",
+		"lucide": "^0.555.0",
+		"tailwindcss": "^4.1.17"
+	},
+	"scripts": {
+		"deploy": "gh-pages -d src"
+	}
 }
