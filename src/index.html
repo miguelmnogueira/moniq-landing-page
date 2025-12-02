@@ -5,14 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MoniQ</title>
 		<link href="./output.css" rel="stylesheet" />
+		<link href="./input.css" rel="stylesheet" />
 	</head>
-	<body>
-		<section>
-			<div>
-				<div></div>
-
-				<h2></h2>
+	<body class="bg-background min-h-screen">
+		<section class="relative">
+			<img
+				src="./assets/top-money.png"
+				class="absolute top-0 left-0 z-20"
+			/>
+			<img
+				src="./assets/right-money.png"
+				class="absolute right-0 top-48 z-0"
+			/>
+			<img
+				src="./assets/left-money.png"
+				class="absolute left-0-0 -bottom-8 z-0"
+			/>
+			<div
+				class="bg-background/75 mx-3 px-2.5 pt-20 pb-12 flex flex-col justify-between items-center min-h-[600px] rounded-b-2xl z-10 backdrop-blur-sm border-b border-white/10"
+			>
+				<div class="flex flex-col gap-4 w-full">
+					<div
+						class="bg-accent w-20 rounded-full py-1 text-center text-foreground font-poppins font-semibold text-sm self-end drop-shadow-[0_0_3px_var(--color-accent)]"
+					>
+						MoniQ
+					</div>
+					<h2
+						class="font-poppins text-foreground font-bold text-3xl leading-12 whitespace-nowrap"
+					>
+						Seu dinheiro, do jeito<br />fácil e grátis.<br />Aprenda
+						jogando.
+					</h2>
+					<p
+						class="text-muted-foreground text-xl/7 font-fustat max-w-xs"
+					>
+						Treine sua vida financeira com missões curtas, desafios
+						diários e recompensas reais.
+					</p>
+				</div>
+				<div class="flex flex-col items-center gap-3 w-full">
+					<button
+						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer"
+					>
+						Entrar no jogo financeiro
+					</button>
+					<button
+						class="text-muted-foreground font-poppins text-sm font-medium py-2 px-8 cursor-pointer"
+					>
+						Ver como funciona >
+					</button>
+				</div>
 			</div>
+		</section>
+		<section>
+			<h4>O que podemos te oferecer</h4>
+            <div>
+                <div></div>
+            </div>
 		</section>
 	</body>
 </html>
