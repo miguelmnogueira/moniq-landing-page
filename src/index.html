@@ -4,10 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MoniQ</title>
-		<link href="./output.css" rel="stylesheet" />
 		<link href="./input.css" rel="stylesheet" />
+		<link href="./output.css" rel="stylesheet" />
 	</head>
-	<body class="bg-background min-h-screen">
+	<body
+		class="bg-background min-h-screen text-foreground flex flex-col gap-18"
+	>
 		<section class="relative">
 			<img
 				src="./assets/top-money.png"
@@ -45,7 +47,7 @@
 				</div>
 				<div class="flex flex-col items-center gap-3 w-full">
 					<button
-						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer"
+						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)]"
 					>
 						Entrar no jogo financeiro
 					</button>
@@ -57,11 +59,56 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<h4>O que podemos te oferecer</h4>
-            <div>
-                <div></div>
-            </div>
+		<section class="px-6 flex flex-col items-center gap-8">
+			<h4
+				class="text-[40px] leading-12 font-semibold text-foreground max-w-[327px] font-poppins"
+			>
+				O que podemos te
+				<span class="gradient-accent-highlight"> oferecer </span>
+			</h4>
+			<div class="px-6 flex flex-col gap-10">
+				<div class="">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Simples e Intuitivo
+					</h5>
+					<p class="text-base/5.5">
+						Os recursos foram criados para tornar sua organização
+						financeira rápida e fácil. Em poucos minutos por dia,
+						você já começa a ver resultados reais.
+					</p>
+				</div>
+				<div class="">
+					<img
+						src="./assets/dollar.svg"
+						alt="Dollar Icon"
+						class="mb-2"
+					/>
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Gaste menos, viva melhor
+					</h5>
+					<p class="text-base/5.5">
+						Você identifica seus gastos desnecessários, controla seu
+						dinheiro de verdade e consegue economizar sem
+						sofrimento.
+					</p>
+				</div>
+				<div class="">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Conquista de metas
+					</h5>
+					<p class="text-base/5.5">
+						O aplicativo te mostra quanto guardar, acompanhando o
+						seu progresso automaticamente e te ajudando a chegar lá
+						sem complicações.
+					</p>
+				</div>
+			</div>
 		</section>
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<script>
+			lucide.createIcons();
+		</script>
 	</body>
 </html>
