@@ -33,3 +33,10 @@
 		color: transparent;
 	}
 }
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		background-color: #030503 !important;
+	}
+}
