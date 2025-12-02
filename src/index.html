@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoniQ</title>
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MoniQ</title>
+		<link href="./input.css" rel="stylesheet" />
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body
+		class="bg-background min-h-screen text-foreground flex flex-col gap-18 scroll-smooth"
+	>
+		<section class="relative" id="cta">
+			<img
+				src="./assets/top-money.png"
+				class="absolute top-0 left-0 z-20"
+			/>
+			<img
+				src="./assets/right-money.png"
+				class="absolute right-0 top-48 z-0"
+			/>
+			<img
+				src="./assets/left-money.png"
+				class="absolute left-0-0 -bottom-8 z-0"
+			/>
+			<div
+				class="bg-background/75 mx-3 px-2.5 pt-20 pb-12 flex flex-col justify-between items-center min-h-[600px] rounded-b-2xl z-10 backdrop-blur-sm border-b border-white/10"
+			>
+				<div class="flex flex-col gap-4 w-full">
+					<div
+						class="bg-accent w-20 rounded-full py-1 text-center text-foreground font-poppins font-semibold text-sm self-end drop-shadow-[0_0_3px_var(--color-accent)]"
+					>
+						MoniQ
+					</div>
+					<h2
+						class="font-poppins text-foreground font-bold text-3xl leading-12 whitespace-nowrap"
+					>
+						Seu dinheiro, do jeito<br />fácil e grátis.<br />Aprenda
+						jogando.
+					</h2>
+					<p
+						class="text-muted-foreground text-xl/7 font-fustat max-w-xs"
+					>
+						Treine sua vida financeira com missões curtas, desafios
+						diários e recompensas reais.
+					</p>
+				</div>
+				<div class="flex flex-col items-center gap-3 w-full">
+					<button
+						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)]"
+					>
+						Entrar no jogo financeiro
+					</button>
+					<a
+						href="#features"
+						class="text-muted-foreground font-poppins text-sm font-medium py-2 px-8 cursor-pointer"
+					>
+						Ver como funciona >
+					</a>
+				</div>
+			</div>
+		</section>
+		<section
+			class="px-6 flex flex-col items-center gap-8 scroll-m-16"
+			id="features"
+		>
+			<h4
+				class="text-[40px] leading-12 font-semibold text-foreground max-w-[327px] font-poppins"
+			>
+				O que podemos te
+				<span class="gradient-accent-highlight"> oferecer </span>
+			</h4>
+			<div class="px-6 flex flex-col gap-10">
+				<div class="">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Simples e Intuitivo
+					</h5>
+					<p class="text-base/5.5">
+						Os recursos foram criados para tornar sua organização
+						financeira rápida e fácil. Em poucos minutos por dia,
+						você já começa a ver resultados reais.
+					</p>
+				</div>
+				<div class="">
+					<img
+						src="./assets/dollar.svg"
+						alt="Dollar Icon"
+						class="mb-2"
+					/>
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Gaste menos, viva melhor
+					</h5>
+					<p class="text-base/5.5">
+						Você identifica seus gastos desnecessários, controla seu
+						dinheiro de verdade e consegue economizar sem
+						sofrimento.
+					</p>
+				</div>
+				<div class="">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-2xl/6">
+						Conquista de metas
+					</h5>
+					<p class="text-base/5.5">
+						O aplicativo te mostra quanto guardar, acompanhando o
+						seu progresso automaticamente e te ajudando a chegar lá
+						sem complicações.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section
+			class="bg-linear-to-b from-background via-accent to-accent flex flex-col gap-14 pt-8"
+		>
+			<h5 class="font-poppins font-semibold text-3xl text-center">
+				<span class="gradient-accent-highlight">Educando</span> milhares
+				diariamente
+			</h5>
+			<div class="flex flex-col gap-6 px-12">
+				<div class="flex flex-col gap-3">
+					<h6 class="font-poppins font-bold text-3xl">+200</h6>
+					<p class="font-fustat font-medium">
+						Aulas e quizzes interativos
+					</p>
+				</div>
+				<div class="flex flex-col gap-3">
+					<h6 class="font-poppins font-bold text-3xl">+R$120,000</h6>
+					<p class="font-fustat font-medium">Já foram economizados</p>
+				</div>
+				<div class="flex flex-col gap-3">
+					<h6 class="font-poppins font-bold text-3xl">+10,000</h6>
+					<p class="font-fustat font-medium">
+						Alunos diariamente ativos
+					</p>
+				</div>
+			</div>
+			<button
+				class="w-58 shadow-xl self-center py-2 bg-white rounded-full text-accent font-semibold font-poppins cursor-pointer"
+			>
+				Quero fazer parte
+			</button>
+			<section
+				class="bg-linear-[180deg,#00d400_0%,#3a7bff_10%,#8f44fd_40%,#8f44fd_85%,#000] pb-14 relative"
+			>
+				<img
+					src="./assets/top-diamond.png"
+					class="absolute right-0 -top-15"
+				/>
+				<img
+					src="./assets/left-diamond.png"
+					class="absolute left-0 top-35"
+				/>
+				<div
+					class="bg-background/75 py-8 border-b border-b-premium-purple px-8 mx-2 rounded-2xl border-t border-t-white/50 flex flex-col gap-6"
+				>
+					<div>
+						<h6 class="font-poppins text-3xl font-semibold">
+							Deseja uma jornada
+							<span class="gradient-premium-highlight"
+								>ilimitada?</span
+							>
+						</h6>
+						<p class="font-fustat text-foreground/65">
+							Desbloqueie tudo e evolua ainda mais rápido.
+						</p>
+					</div>
+					<div class="flex items-end mx-auto">
+						<span class="font-poppins font-semibold text-3xl"
+							>R$20,00</span
+						><span
+							class="font-poppins font-normal text-sm text-muted-foreground"
+							>/por mês</span
+						>
+					</div>
+					<ul class="px-6 font-fustat">
+						<li>Vida Ilimitadas</li>
+						<li>Metas Avançadas</li>
+						<li>Alertas Inteligentes</li>
+						<li>Aulas Exclusivas</li>
+						<li>Acompanhamento individual</li>
+						<li>Grupo de mentoria exclusivo</li>
+						<li>e muito mais...</li>
+					</ul>
+					<button
+						class="py-2.5 w-60 mx-auto bg-linear-to-tr from-[#3F48FF] to-[#7C01FF] font-poppins font-semibold rounded-full drop-shadow-[0_0_4px_var(--color-premium-blue)] cursor-pointer"
+					>
+						Quero ser Premium
+					</button>
+				</div>
+			</section>
+		</section>
+		<section class="px-6 flex flex-col gap-8 pb-20">
+			<div class="flex flex-col items-center px-2">
+				<h6 class="font-poppins font-semibold text-[32px] leading-11">
+					Você chegou no fim da página.
+				</h6>
+				<p class="font-fustat text-lg/5.5 text-muted-foreground">
+					Se chegou até aqui, é porque tá interessado. Então vai lá,
+					faz logo o cadastro.
+				</p>
+			</div>
+			<div class="flex flex-col gap-1">
+				<button
+					class="w-52 py-2 bg-foreground text-background font-poppins font-medium text-base rounded-full"
+				>
+					Vai, clica nesse botão
+				</button>
+				<a
+					href="#cta"
+					class="pl-5 font-fustat py-1 bg-linear-to-r from-white/60 to-white/35 w-46 bg-clip-text text-transparent"
+					>Ou sobe lá pra cima!</a
+				>
+			</div>
+		</section>
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<script>
+			lucide.createIcons();
+		</script>
+	</body>
 </html>
