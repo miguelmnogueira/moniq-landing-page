@@ -8,7 +8,7 @@
 		<link href="./output.css" rel="stylesheet" />
 	</head>
 	<body
-		class="bg-background min-h-screen text-foreground flex flex-col gap-18 scroll-smooth"
+		class="bg-background min-h-screen text-foreground flex flex-col gap-18 lg:gap-24 scroll-smooth"
 	>
 		<section class="relative" id="cta">
 			<img
@@ -47,15 +47,15 @@
 							desafios diários e recompensas reais.
 						</p>
 						<p
-							class="lg:block text-muted-foreground text-xl/7 font-fustat max-w-lg"
+							class="lg:block text-muted-foreground text-xl/7 font-fustat max-w-lg hidden"
 						>
 							Treine sua vida financeira com missões curtas,
 							desafios diários e recompensas reais que impulsionam
 							seu progresso todos os dias.
 						</p>
-						<div class="lg:flex lg:flex-row lg:items-center">
+						<div class="lg:flex lg:flex-row lg:items-center hidden">
 							<button
-								class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)] transition-all"
+								class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)] transition-all hover:px-11 hover:py-2.5"
 							>
 								Entrar no jogo financeiro
 							</button>
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 				<div
-					class="flex flex-col items-center gap-3 w-full mt-36 lg:w-auto lg:items-start lg:mt-0 invisible"
+					class="flex flex-col items-center gap-3 w-full lg:w-auto lg:items-start lg:hidden"
 				>
 					<button
 						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)]"
@@ -86,48 +86,94 @@
 			</div>
 		</section>
 		<section
-			class="px-6 flex flex-col items-center gap-8 scroll-m-16"
+			class="px-6 flex flex-col lg:items-center lg:h-[720px] lg:justify-between items-center gap-8 scroll-m-[150px] lg:px-24"
 			id="features"
 		>
-			<h4
-				class="text-[40px] leading-12 font-semibold text-foreground max-w-[327px] font-poppins"
+			<div class="lg:flex lg:gap-20">
+				<h4
+					class="text-[40px] leading-12 font-semibold text-foreground font-poppins lg:text-7xl/18 max-w-2xl"
+				>
+					O que podemos te
+					<strong class="gradient-accent-highlight font-semibold"
+						>oferecer</strong
+					>
+				</h4>
+				<p
+					class="hidden lg:block font-fustat text-lg/6 text-muted-foreground mt-4 max-w-md"
+				>
+					Reunimos tudo o que você precisa para organizar seu dinheiro
+					com facilidade, economizar de forma inteligente e alcançar
+					suas metas com mais clareza, motivação e zero complicação.
+				</p>
+			</div>
+			<div
+				class="px-6 flex flex-col lg:flex-row gap-10 lg:gap-20 lg:flex-wrap mx-auto lg:justify-center"
 			>
-				O que podemos te
-				<span class="gradient-accent-highlight"> oferecer </span>
-			</h4>
-			<div class="px-6 flex flex-col gap-10">
-				<div class="">
+				<div class="lg:max-w-sm">
 					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
-					<h5 class="font-fustat font-bold text-2xl/6">
+					<h5 class="font-fustat font-bold text-xl/6">
 						Simples e Intuitivo
 					</h5>
-					<p class="text-base/5.5">
+					<p class="text-base/5.5 text-foreground/90">
 						Os recursos foram criados para tornar sua organização
 						financeira rápida e fácil. Em poucos minutos por dia,
 						você já começa a ver resultados reais.
 					</p>
 				</div>
-				<div class="">
+				<div class="lg:max-w-sm">
 					<img
 						src="./assets/dollar.svg"
 						alt="Dollar Icon"
 						class="mb-2"
 					/>
-					<h5 class="font-fustat font-bold text-2xl/6">
+					<h5 class="font-fustat font-bold text-xl/6">
 						Gaste menos, viva melhor
 					</h5>
-					<p class="text-base/5.5">
+					<p class="text-base/5.5 text-foreground/90">
 						Você identifica seus gastos desnecessários, controla seu
 						dinheiro de verdade e consegue economizar sem
 						sofrimento.
 					</p>
 				</div>
-				<div class="">
+				<div class="lg:max-w-sm">
 					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
-					<h5 class="font-fustat font-bold text-2xl/6">
+					<h5 class="font-fustat font-bold text-xl/6">
 						Conquista de metas
 					</h5>
-					<p class="text-base/5.5">
+					<p class="text-base/5.5 text-foreground/90">
+						O aplicativo te mostra quanto guardar, acompanhando o
+						seu progresso automaticamente e te ajudando a chegar lá
+						sem complicações.
+					</p>
+				</div>
+				<div class="lg:max-w-sm hidden lg:block">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-xl/6">
+						Conquista de metas
+					</h5>
+					<p class="text-base/5.5 text-foreground/90">
+						O aplicativo te mostra quanto guardar, acompanhando o
+						seu progresso automaticamente e te ajudando a chegar lá
+						sem complicações.
+					</p>
+				</div>
+				<div class="lg:max-w-sm hidden lg:block">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-xl/6">
+						Conquista de metas
+					</h5>
+					<p class="text-base/5.5 text-foreground/90">
+						O aplicativo te mostra quanto guardar, acompanhando o
+						seu progresso automaticamente e te ajudando a chegar lá
+						sem complicações.
+					</p>
+				</div>
+				<div class="lg:max-w-sm hidden lg:block">
+					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<h5 class="font-fustat font-bold text-xl/6">
+						Conquista de metas
+					</h5>
+					<p class="text-base/5.5 text-foreground/90">
 						O aplicativo te mostra quanto guardar, acompanhando o
 						seu progresso automaticamente e te ajudando a chegar lá
 						sem complicações.
@@ -138,24 +184,34 @@
 		<section
 			class="bg-linear-to-b from-background via-accent to-accent flex flex-col gap-14 pt-8"
 		>
-			<h5 class="font-poppins font-semibold text-3xl text-center">
-				<span class="gradient-accent-highlight">Educando</span> milhares
-				diariamente
+			<h5
+				class="font-poppins font-semibold text-3xl text-center lg:text-6xl lg:pt-8"
+			>
+				<span class="gradient-accent-highlight-vertical">Educando</span>
+				milhares diariamente
 			</h5>
-			<div class="flex flex-col gap-6 px-12 md:px-24">
+			<div class="flex flex-col gap-6 px-12 md:px-24 lg:gap-12">
 				<div class="flex flex-col gap-3">
-					<h6 class="font-poppins font-bold text-3xl">+200</h6>
-					<p class="font-fustat font-medium">
+					<h6 class="font-poppins font-bold text-3xl lg:text-5xl">
+						+200
+					</h6>
+					<p class="font-fustat font-medium lg:text-2xl">
 						Aulas e quizzes interativos
 					</p>
 				</div>
 				<div class="flex flex-col gap-3">
-					<h6 class="font-poppins font-bold text-3xl">+R$120,000</h6>
-					<p class="font-fustat font-medium">Já foram economizados</p>
+					<h6 class="font-poppins font-bold text-3xl lg:text-5xl">
+						+R$120,000
+					</h6>
+					<p class="font-fustat font-medium lg:text-2xl">
+						Já foram economizados
+					</p>
 				</div>
 				<div class="flex flex-col gap-3">
-					<h6 class="font-poppins font-bold text-3xl">+10,000</h6>
-					<p class="font-fustat font-medium">
+					<h6 class="font-poppins font-bold text-3xl lg:text-5xl">
+						+10,000
+					</h6>
+					<p class="font-fustat font-medium lg:text-2xl">
 						Alunos diariamente ativos
 					</p>
 				</div>
