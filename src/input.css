@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme{
+    --font-poppins: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-fustat "Fustat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+    --color-background: #030503;
+    --color-accent: #00D400;
+
+
+    --gradient-muted-text: linear-gradient(
+        90deg, 
+        #E7F3E7, 
+        #6F746F
+    );
+    --gradient-accent-hightlight: linear-gradient(
+        90deg,
+        #00FF1E,
+        #018410
+    );
+    --gradient-premium: linear-gradient(
+        90deg,
+        #3A7BFF 49%,
+        #8F44FD 73%
+    );
+
+}
