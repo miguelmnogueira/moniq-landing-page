@@ -13,8 +13,9 @@
 		<section class="relative" id="cta">
 			<img
 				src="./assets/top-money.png"
-				class="absolute top-0 left-0 z-20"
+				class="absolute top-0 left-0 z-20 lg:left-34"
 			/>
+
 			<img
 				src="./assets/right-money.png"
 				class="absolute right-0 top-48 z-0"
@@ -24,28 +25,52 @@
 				class="absolute left-0-0 -bottom-8 z-0"
 			/>
 			<div
-				class="bg-background/75 mx-3 px-2.5 pt-20 pb-12 flex flex-col justify-between items-center min-h-[600px] rounded-b-2xl z-10 backdrop-blur-sm border-b border-white/10"
+				class="bg-background/75 mx-3 px-2.5 md:px-8 lg:px-24 lg:mx-6 pt-20 pb-12 md:pb-0 flex flex-col md:flex-row lg:flex-col justify-between lg:justify-start lg:gap-12 items-center lg:items-start min-h-[600px] md:min-h-[500px] rounded-b-2xl z-10 backdrop-blur-sm border-b border-white/10 lg:pt-35 lg:min-h-[750px]"
 			>
 				<div class="flex flex-col gap-4 w-full">
 					<div
-						class="bg-accent w-20 rounded-full py-1 text-center text-foreground font-poppins font-semibold text-sm self-end drop-shadow-[0_0_3px_var(--color-accent)]"
+						class="bg-accent w-20 rounded-full py-1 text-center text-foreground font-poppins font-semibold text-sm self-end md:self-start drop-shadow-[0_0_3px_var(--color-accent)]"
 					>
 						MoniQ
 					</div>
 					<h2
-						class="font-poppins text-foreground font-bold text-3xl leading-12 whitespace-nowrap"
+						class="font-poppins text-foreground font-bold text-3xl leading-12 whitespace-nowrap lg:text-7xl/20"
 					>
 						Seu dinheiro, do jeito<br />fácil e grátis.<br />Aprenda
 						jogando.
 					</h2>
-					<p
-						class="text-muted-foreground text-xl/7 font-fustat max-w-xs"
-					>
-						Treine sua vida financeira com missões curtas, desafios
-						diários e recompensas reais.
-					</p>
+					<div class="lg:flex flex-col gap-8">
+						<p
+							class="text-muted-foreground text-xl/7 font-fustat max-w-xs md:ml-8 lg:m-0 lg:hidden"
+						>
+							Treine sua vida financeira com missões curtas,
+							desafios diários e recompensas reais.
+						</p>
+						<p
+							class="lg:block text-muted-foreground text-xl/7 font-fustat max-w-lg"
+						>
+							Treine sua vida financeira com missões curtas,
+							desafios diários e recompensas reais que impulsionam
+							seu progresso todos os dias.
+						</p>
+						<div class="lg:flex lg:flex-row lg:items-center">
+							<button
+								class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)] transition-all"
+							>
+								Entrar no jogo financeiro
+							</button>
+							<a
+								href="#features"
+								class="text-muted-foreground font-poppins text-sm font-medium py-2 px-8 cursor-pointer hover:text-white transition-colors"
+							>
+								Ver como funciona >
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="flex flex-col items-center gap-3 w-full">
+				<div
+					class="flex flex-col items-center gap-3 w-full mt-36 lg:w-auto lg:items-start lg:mt-0 invisible"
+				>
 					<button
 						class="text-foreground font-poppins font-bold px-10 py-2 bg-accent rounded-full text-base cursor-pointer drop-shadow-[0_0_3px_var(--color-accent)]"
 					>
@@ -117,7 +142,7 @@
 				<span class="gradient-accent-highlight">Educando</span> milhares
 				diariamente
 			</h5>
-			<div class="flex flex-col gap-6 px-12">
+			<div class="flex flex-col gap-6 px-12 md:px-24">
 				<div class="flex flex-col gap-3">
 					<h6 class="font-poppins font-bold text-3xl">+200</h6>
 					<p class="font-fustat font-medium">
@@ -155,33 +180,43 @@
 					class="bg-background/75 py-8 border-b border-b-premium-purple px-8 mx-2 rounded-2xl border-t border-t-white/50 flex flex-col gap-6"
 				>
 					<div>
-						<h6 class="font-poppins text-3xl font-semibold">
+						<h6
+							class="font-poppins text-3xl font-semibold md:text-center"
+						>
 							Deseja uma jornada
 							<span class="gradient-premium-highlight"
 								>ilimitada?</span
 							>
 						</h6>
-						<p class="font-fustat text-foreground/65">
+						<p
+							class="font-fustat text-foreground/65 md:text-center"
+						>
 							Desbloqueie tudo e evolua ainda mais rápido.
 						</p>
 					</div>
-					<div class="flex items-end mx-auto">
-						<span class="font-poppins font-semibold text-3xl"
-							>R$20,00</span
-						><span
-							class="font-poppins font-normal text-sm text-muted-foreground"
-							>/por mês</span
+					<div
+						class="flex flex-col md:flex-row items-center justify-center md:gap-6 gap-8"
+					>
+						<div
+							class="flex items-end mx-auto md:mx-0 justify-center"
 						>
+							<span class="font-poppins font-semibold text-3xl"
+								>R$20,00</span
+							><span
+								class="font-poppins font-normal text-sm text-muted-foreground"
+								>/por mês</span
+							>
+						</div>
+						<ul class="px-6 font-fustat">
+							<li>Vida Ilimitadas</li>
+							<li>Metas Avançadas</li>
+							<li>Alertas Inteligentes</li>
+							<li>Aulas Exclusivas</li>
+							<li>Acompanhamento individual</li>
+							<li>Grupo de mentoria exclusivo</li>
+							<li>e muito mais...</li>
+						</ul>
 					</div>
-					<ul class="px-6 font-fustat">
-						<li>Vida Ilimitadas</li>
-						<li>Metas Avançadas</li>
-						<li>Alertas Inteligentes</li>
-						<li>Aulas Exclusivas</li>
-						<li>Acompanhamento individual</li>
-						<li>Grupo de mentoria exclusivo</li>
-						<li>e muito mais...</li>
-					</ul>
 					<button
 						class="py-2.5 w-60 mx-auto bg-linear-to-tr from-[#3F48FF] to-[#7C01FF] font-poppins font-semibold rounded-full drop-shadow-[0_0_4px_var(--color-premium-blue)] cursor-pointer"
 					>
@@ -200,7 +235,7 @@
 					faz logo o cadastro.
 				</p>
 			</div>
-			<div class="flex flex-col gap-1">
+			<div class="flex flex-col gap-1 md:items-center">
 				<button
 					class="w-52 py-2 bg-foreground text-background font-poppins font-medium text-base rounded-full"
 				>
