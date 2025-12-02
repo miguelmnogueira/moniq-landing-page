@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @theme {
 	--font-poppins: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial,
 		sans-serif;
@@ -11,6 +12,9 @@
 	--color-accent: #00d400;
 	--color-muted-foreground: #717671;
 
+	--color-premium-blue: #3a7bff;
+	--color-premium-purple: #8f44fd;
+
 	--gradient-muted-text: linear-gradient(90deg, #e7f3e7, #6f746f);
 	--gradient-premium: linear-gradient(90deg, #3a7bff 49%, #8f44fd 73%);
 }
@@ -18,6 +22,12 @@
 @layer components {
 	.gradient-accent-highlight {
 		background: linear-gradient(90deg, #00ff1e 20%, #009412);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	.gradient-premium-highlight {
+		background: linear-gradient(90deg, #3a7bff 45%, #8f44fd 60%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
