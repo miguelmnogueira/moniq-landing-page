@@ -83,7 +83,7 @@
 								</button>
 								<a
 									href="#features"
-									class="text-muted-foreground font-poppins text-sm font-medium py-2 px-8 cursor-pointer hover:text-white transition-colors"
+									class="text-muted-foreground font-poppins text-sm font-medium py-2 px-8 cursor-pointer hover:text-white/80 transition-colors"
 								>
 									Ver como funciona >
 								</a>
@@ -113,7 +113,7 @@
 			</div>
 		</section>
 		<section
-			class="px-6 flex flex-col lg:items-center lg:h-[720px] lg:justify-between items-center gap-8 scroll-m-[150px] lg:px-24"
+			class="px-6 flex flex-col lg:items-center lg:h-[720px] lg:justify-between items-center gap-8 scroll-m-[200px] lg:px-24"
 			id="features"
 		>
 			<div class="lg:flex lg:gap-20">
@@ -163,7 +163,11 @@
 					</p>
 				</div>
 				<div class="lg:max-w-sm">
-					<img src="./assets/fire.svg" alt="Fire Icon" class="mb-2" />
+					<img
+						src="./assets/shield.svg"
+						alt="Fire Icon"
+						class="mb-2"
+					/>
 					<h5 class="font-fustat font-bold text-xl/6">
 						Conquista de metas
 					</h5>
@@ -209,15 +213,25 @@
 			</div>
 		</section>
 		<section
-			class="bg-linear-to-b from-background via-accent to-accent flex flex-col gap-14 pt-8"
+			class="bg-linear-to-b from-background via-accent to-accent flex flex-col gap-14 pt-8 lg:items-center"
 		>
-			<h5
-				class="font-poppins font-semibold text-3xl text-center lg:text-6xl lg:pt-8"
-			>
-				<span class="gradient-accent-highlight-vertical">Educando</span>
-				milhares diariamente
-			</h5>
-			<div class="flex flex-col gap-6 px-12 md:px-24 lg:gap-12">
+			<div class="flex flex-col items-center lg:mb-20">
+				<h5
+					class="font-poppins font-semibold text-3xl text-center lg:text-6xl lg:pt-8"
+				>
+					<span class="gradient-accent-highlight-vertical"
+						>Educando</span
+					>
+					milhares diariamente
+				</h5>
+				<p
+					class="font-fustat lg:flex hidden text-muted-foreground text-center text-2xl mt-2"
+				>
+					Transformando educação financeira em diversão e resultados
+					reais.
+				</p>
+			</div>
+			<div class="flex flex-col gap-6 px-12 md:px-24 lg:gap-18">
 				<div class="flex flex-col gap-3">
 					<h6 class="font-poppins font-bold text-3xl lg:text-5xl">
 						+200
@@ -244,12 +258,12 @@
 				</div>
 			</div>
 			<button
-				class="w-58 shadow-xl self-center py-2 bg-white rounded-full text-accent font-semibold font-poppins cursor-pointer"
+				class="w-58 shadow-xl self-center py-2 bg-white rounded-full text-accent font-semibold font-poppins cursor-pointer lg:px-6 lg:text-lg hover:scale-105 transition-all lg:mt-10 mb-8"
 			>
 				Quero fazer parte
 			</button>
 			<section
-				class="bg-linear-[180deg,#00d400_0%,#3a7bff_10%,#8f44fd_40%,#8f44fd_85%,#000] pb-14 relative"
+				class="bg-linear-[180deg,#00d400_0%,#3a7bff_3%,#8f44fd_40%,#8f44fd_80%,#030503] pb-14 relative w-screen flex flex-col items-center"
 			>
 				<img
 					src="./assets/top-diamond.png"
@@ -260,19 +274,20 @@
 					class="absolute left-0 top-35"
 				/>
 				<div
-					class="bg-background/75 py-8 border-b border-b-premium-purple px-8 mx-2 rounded-2xl border-t border-t-white/50 flex flex-col gap-6"
+					class="bg-background/75 py-8 border-b border-b-premium-purple px-8 mx-2 rounded-2xl border-t border-t-white/50 flex flex-col gap-6 lg:gap-20 lg:w-[90%]"
 				>
 					<div>
 						<h6
-							class="font-poppins text-3xl font-semibold md:text-center"
+							class="font-poppins text-3xl font-semibold md:text-center lg:text-5xl"
 						>
 							Deseja uma jornada
-							<span class="gradient-premium-highlight"
+							<span
+								class="gradient-premium-highlight drop-shadow-[0_0_3px_#8e44fd57]"
 								>ilimitada?</span
 							>
 						</h6>
 						<p
-							class="font-fustat text-foreground/65 md:text-center"
+							class="font-fustat text-foreground/65 md:text-center lg:text-xl mt-2"
 						>
 							Desbloqueie tudo e evolua ainda mais rápido.
 						</p>
@@ -283,14 +298,17 @@
 						<div
 							class="flex items-end mx-auto md:mx-0 justify-center"
 						>
-							<span class="font-poppins font-semibold text-3xl"
+							<span
+								class="font-poppins font-semibold text-3xl lg:text-5xl"
 								>R$20,00</span
 							><span
 								class="font-poppins font-normal text-sm text-muted-foreground"
 								>/por mês</span
 							>
 						</div>
-						<ul class="px-6 font-fustat">
+						<ul
+							class="px-6 font-fustat lg:text-xl text-foreground/90"
+						>
 							<li>Vida Ilimitadas</li>
 							<li>Metas Avançadas</li>
 							<li>Alertas Inteligentes</li>
@@ -301,7 +319,7 @@
 						</ul>
 					</div>
 					<button
-						class="py-2.5 w-60 mx-auto bg-linear-to-tr from-[#3F48FF] to-[#7C01FF] font-poppins font-semibold rounded-full drop-shadow-[0_0_4px_var(--color-premium-blue)] cursor-pointer"
+						class="py-2.5 w-60 mx-auto bg-linear-to-tr from-[#3F48FF] to-[#7C01FF] font-poppins font-semibold rounded-full drop-shadow-[0_0_4px_var(--color-premium-purple)] hover:py-3 hover:w-64 hover:drop-shadow-[0_0_4px_var(--color-premium-blue)] transition-all cursor-pointer"
 					>
 						Quero ser Premium
 					</button>
@@ -310,23 +328,27 @@
 		</section>
 		<section class="px-6 flex flex-col gap-8 pb-20">
 			<div class="flex flex-col items-center px-2">
-				<h6 class="font-poppins font-semibold text-[32px] leading-11">
+				<h6
+					class="font-poppins font-semibold text-[32px] leading-11 lg:text-5xl"
+				>
 					Você chegou no fim da página.
 				</h6>
-				<p class="font-fustat text-lg/5.5 text-muted-foreground">
+				<p
+					class="font-fustat text-lg/5.5 text-muted-foreground lg:text-xl"
+				>
 					Se chegou até aqui, é porque tá interessado. Então vai lá,
 					faz logo o cadastro.
 				</p>
 			</div>
 			<div class="flex flex-col gap-1 md:items-center">
 				<button
-					class="w-52 py-2 bg-foreground text-background font-poppins font-medium text-base rounded-full"
+					class="w-52 py-2 bg-foreground text-background font-poppins font-medium text-base rounded-full lg:w-60 hover:scale-105 transition-all cursor-pointer"
 				>
 					Vai, clica nesse botão
 				</button>
 				<a
 					href="#cta"
-					class="pl-5 font-fustat py-1 bg-linear-to-r from-white/60 to-white/35 w-46 bg-clip-text text-transparent"
+					class="pl-5 font-fustat py-1 bg-linear-to-r from-white/60 to-white/35 w-46 bg-clip-text text-transparent hover:bg-white/80 transition-all cursor-pointer"
 					>Ou sobe lá pra cima!</a
 				>
 			</div>
