@@ -26,6 +26,12 @@
 		background-clip: text;
 		color: transparent;
 	}
+	.gradient-accent-highlight-vertical {
+		background: linear-gradient(0deg, #009412 20%, #00ff1e);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
 	.gradient-premium-highlight {
 		background: linear-gradient(90deg, #3a7bff 45%, #8f44fd 60%);
 		-webkit-background-clip: text;
